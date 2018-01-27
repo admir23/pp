@@ -54,8 +54,21 @@
 						left: 0;
 						opacity: 0;
 						transition: all .3s ease-in-out;
+						overflow: hidden;
+						
 						&:hover {
 							opacity: 0.8;
+
+							.project-info{
+								.project-details{
+									transform: translate3d(0, 0, 0);
+									opacity: 1;
+								}
+								.project-title {
+									transform: translate3d(0, 0, 0);
+									opacity: 1;
+								}
+							}
 						}
 
 						.project-info {
@@ -68,11 +81,18 @@
 								position: relative;
 								font-size: 1.1rem;
 								text-transform: capitalize;
+								margin: 0 0 0.9rem;
+								transform: translate3d(-100px, 0, 0);
+								opacity: 0;
+								transition: all 0.3s ease-in;
 							}
 							.project-title {
 								font-size: 1.8rem;
 								text-transform: uppercase;
 								font-weight: 900;
+								transform: translate3d(-400px, 0, 0);
+								opacity: 0;
+								transition: all 0.3s ease-in 0.1s;
 							}
 							.fa-long-arrow-right {
 								position: absolute;
