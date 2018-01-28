@@ -1,4 +1,4 @@
-.home {
+.contact{
 	.logo{
 		border: 5px solid #fff;
 		height: 130px;
@@ -29,25 +29,58 @@
 			position: relative;
 			height: 100%;
 
-			.user-image {
+			.form-section {
 				position: absolute;
 				top: 56px;
 				left: -100px;
-				width: 400px;
+				width: 300px;
 				height: calc(100% - 112px);
-				background: 
-				url("https://admirkurtovic.com/wp-content/uploads/2016/07/n.jpg") no-repeat center center; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
+				background: $color2;
+				color: $color3;
+				padding: 35px;
 				-webkit-box-shadow: 15px 14px 17px -16px rgba(0,0,0,0.21);
 				-moz-box-shadow: 15px 14px 17px -16px rgba(0,0,0,0.21);
 				box-shadow: 15px 14px 17px -16px rgba(0,0,0,0.21);
+		
+				h4 {
+					font-size: 1.3rem;
+					// margin-top: px;
+					margin-bottom: 2.2rem;
+					color: azure;
+				}
+				
+				input[type="text"],
+				input[type="email"],textarea {
+					width: 100%;
+					background: transparent;
+					border: none;
+					border-bottom: 2px solid $color3;
+					margin-bottom: 2rem;
+					font-size: 0.8rem;
+					text-transform: uppercase;
+					line-height: 0.8rem;
+					color: $color5;
+					padding: 10px 0 10px 0;
+					font-weight: 100;
+				}
+				button[type="submit"] {
+					background: $color1;
+					border: none;
+					font-size: 1rem;
+					text-transform: uppercase;
+					color: white;
+					width: 100%;
+					-webkit-border-radius: 30px;
+					-moz-border-radius: 30px;
+					border-radius: 30px;
+					text-align: center;
+					padding: 10px 0 10px 0;
+
+				}
 			}
 		}
 		
-		.profile-section{
+		.contact-section{
 			vertical-align: top;
 			display: inline-block;
 			max-width: 500px;
