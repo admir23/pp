@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({16:[function(require,module,exports) {
+})({23:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],7:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,22 +132,22 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":16}],5:[function(require,module,exports) {
+},{"./bundle-url":23}],12:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":7}],6:[function(require,module,exports) {
+},{"_css_loader":14}],13:[function(require,module,exports) {
 "use strict";
 
 require("../scss/main.scss");
 
 function toggleMenu() {
-  $('#menu-btn').toggleClass('menu-active');
-  $('#menu-btn').toggleClass('home');
+  document.getElementById("menu-btn").classList.toggle("menu-active");
+  document.getElementById("home").classList.toggle("home");
 }
-},{"../scss/main.scss":5}],0:[function(require,module,exports) {
+},{"../scss/main.scss":12}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -165,7 +165,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':61545/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':52667/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -266,4 +266,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,6])
+},{}]},{},[0,13])
