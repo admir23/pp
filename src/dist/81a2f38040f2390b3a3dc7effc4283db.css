@@ -142,6 +142,10 @@ html, body {
   overflow-x: hidden;
   padding: 56px; }
 
+@media (max-width: 767px) and (max-width: 767px) {
+  body, html {
+    height: auto; } }
+
 .logo {
   border: 5px solid #fff;
   height: 130px;
@@ -245,6 +249,8 @@ html, body {
       margin: 0 0 1.5rem 0; }
 
 @media (max-width: 767px) {
+  body, html {
+    height: 0px; }
   .home .menu-icon {
     top: -3px;
     right: 20px;
@@ -254,26 +260,25 @@ html, body {
   .home .info-section {
     padding: 10px 20px;
     position: static; }
-  .home .logo {
-    height: 50px;
-    width: 70px;
-    font-size: 1rem; }
-  .home .info-box {
-    display: none; }
+    .home .info-section .logo {
+      height: 50px;
+      width: 70px;
+      font-size: 1rem; }
+    .home .info-section .info-box {
+      display: none; }
   .home .content-area {
     margin-left: 0;
     width: 100%;
     overflow: hidden; }
     .home .content-area .img-container {
-      padding: 56px 20px; }
+      padding: 56px 20px 0; }
       .home .content-area .img-container .user-image {
         position: static;
-        width: 100%;
-        overflow: auto; }
+        width: 100%; }
     .home .content-area .profile-section {
-      width: 60%;
+      width: 70%;
       float: right;
-      padding: 20% 20px 0;
+      padding: 20% 60px 0;
       max-width: 800px; }
       .home .content-area .profile-section .primary-btn,
       .home .content-area .profile-section .ghost-btn {
@@ -356,8 +361,6 @@ html, body {
           margin-bottom: 0.8rem; }
 
 @media (max-width: 767px) and (max-width: 767px) {
-  body, html {
-    height: auto; }
   .resume .menu-icon {
     top: -3px;
     right: 20px;

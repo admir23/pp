@@ -94,50 +94,52 @@
 		}
 
 		.info-section {
-
-			padding: 10px 20px;
+      padding: 10px 20px;
 			// left: 0;
 			// bottom: 0;
 			// top: 0;
 			position: static;
+		
+			.logo {
+				height: 50px;
+				width: 70px;
+				font-size: 1rem;
+			}
+	
+			.info-box{
+				display: none;
+			}
 		}
-		.logo {
-			height: 50px;
-			width: 70px;
-			font-size: 1rem;
-		}
-
-		.info-box{
-			display: none;
-		}
+		
 		.content-area {
 			margin-left: 0;
 			width: 100%;
 			overflow: hidden;
 
-			.img-container{
-				padding: 56px 20px;
+		  .img-container{
+				padding: 56px 20px 0;
 			
 				.user-image{
 					position: static;
 					width: 100%;
-					overflow: auto;
-		    }	
+				}	
 			}
-			.profile-section {
-				width: 60%;
-				float: right;
-				padding: 20% 20px 0;
-				max-width: 800px;
+				.profile-section {
+					width: 70%;
+					float: right;
+					padding: 20% 60px 0;
+					max-width: 800px;
+					
 				
-				.primary-btn, 
-				.ghost-btn{
-					margin-bottom: 20px;
-				}
-			}
-		} 
-	} 
-}
+					.primary-btn, 
+					.ghost-btn{
+						margin-bottom: 20px;
+					}
+		  	}
+		  } 
+    } 
+	}
+
 
 //tablet
 @media (min-width: 768px) and (max-width: 991px) {
@@ -195,10 +197,7 @@
 		.content-area {
 			.img-container{
 				padding: 56px 20px 0;
-				float: left;
-				.user-image{
-				
-		    }	
+				float: left;	
 			}
 			.profile-section {
 				width: 70%;
