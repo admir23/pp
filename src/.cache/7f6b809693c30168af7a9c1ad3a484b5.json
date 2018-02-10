@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"../scss/main.scss","loc":{"line":1,"column":7}}],"generated":{"js":"\"use strict\";function e(){document.getElementById(\"menu-btn\").classList.toggle(\"menu-active\"),document.getElementById(\"home\").classList.toggle(\"home\")}require(\"../scss/main.scss\");"},"hash":"efe2cae906444bda429920daa76d5dd0","cacheData":{"env":{}}}
